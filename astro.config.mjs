@@ -14,6 +14,8 @@ export default defineConfig({
       prefixDefaultLocale: true,
     },
   },
+  output: "static",
+  base: "/Codessa.app/",
 
   integrations: [react(), icon()],
 });
