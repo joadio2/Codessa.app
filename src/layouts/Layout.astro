@@ -1,0 +1,61 @@
+---
+import Nav from '../components/nav/nav.astro';
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+
+const currentLang = Astro.currentLocale || 'en';
+import { useTranslation } from "../i18n/utils";
+import {languagesList} from "../i18n/ui";
+const t = useTranslation(currentLang as keyof typeof languagesList);
+---
+
+<!doctype html>
+<html lang={currentLang}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<title>{title}</title>
+	</head>
+	<body>
+		
+		
+		<main>
+			<Nav text={t}/>
+			<slot  />
+		</main>
+		
+	</body>
+</html>
+
+<style is:global>
+	:root {
+  --space-black: hsl(240, 50%, 5%);
+  --neon-blue: #00e676;
+  --plasma-purple: hsl(303, 85%, 41%);
+  --plasma-hover: hsl(303, 83%, 64%);
+  --cyber-green: hsl(140, 70%, 50%);
+  --amber-glow: hsl(40, 100%, 60%);
+  --light-gray: hsl(0, 0%, 75%);
+  --metal-gray: hsl(0, 0%, 30%);
+}
+	html,
+	body {
+		padding: 0;
+		margin: 0 auto;
+		max-width:100%;
+		background-color: hsl(240, 50%, 5%);
+		font-family: "Gabarito", sans-serif;
+		
+}
+	
+
+
+</style>

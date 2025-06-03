@@ -1,0 +1,100 @@
+---
+
+const { text } = Astro.props; 
+import RobotHero from './robotHero';
+---
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="text-content">
+      <h1>
+        {text('hero.title')} <span>{text('hero.titleSpan')}</span>
+      </h1>
+      <p>
+        {text('hero.descriptionBeforeSpan')} <span>{text('hero.descriptionSpan')}</span>{text('hero.descriptionAfterSpan')}
+      </p>
+      
+      
+      <button>{text('hero.cta')}</button>
+    </div>
+    <RobotHero client:only="react" />
+  </div>
+</section>
+
+
+
+<style >
+
+  .hero {
+    width: 100vw;
+    color: white;
+    display: flex;
+    height: 80vh;
+    padding: 4rem 0;
+    background-color: var(--space-black);
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    
+  }
+
+  .text-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+
+  }
+  .text-content{
+    max-width:800px;
+  }
+
+  .text-content h1 span {
+    color: var(--neon-blue);
+  }
+
+  .text-content p {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .text-content p span {
+    color: var(--amber-glow);
+  }
+  .text-content button {
+    margin-top: 1rem;
+    background-color: var(--plasma-purple);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.3s ease;
+  }
+  .text-content button:hover {
+    background-color: hsl(270, 100%, 75%);
+    transform: scale(1.05);
+  }
+  @media (max-width: 768px) {
+    .hero {
+      width: 100vw;
+
+      
+      padding-top: 1rem;
+    width: 100%;
+    text-align: center;
+    }
+    .hero-content{
+      flex-direction: column;
+      align-items: center;
+    
+    }
+  }
+</style>

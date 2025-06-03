@@ -1,0 +1,202 @@
+---
+
+import Lottie from "lottie-react";
+import brain from "../../assets/lottie/brain.json";
+import help from "../../assets/lottie/help.json";
+import inovacion from "../../assets/lottie/inovacion.json";
+
+const { text } = Astro.props;
+---
+
+<section class="after-hero-section" aria-labelledby="after-hero-title">
+  <div class="container">
+    <h2 id="after-hero-title">{text("afterHero.title")}</h2>
+    <p class="intro-paragraph">{text("afterHero.subtitle")}</p>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="icon-wrapper">
+          <Lottie animationData={brain} client:only="react" />
+        </div>
+        <h3>{text("afterHero.card1.title")}</h3>
+        <p>{text("afterHero.card1.text")}</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon-wrapper">
+          <Lottie animationData={help} client:only="react" />
+        </div>
+        <h3>{text("afterHero.card2.title")}</h3>
+        <p>{text("afterHero.card2.text")}</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon-wrapper">
+          <Lottie animationData={inovacion} client:only="react" />
+        </div>
+        <h3>{text("afterHero.card3.title")}</h3>
+        <p>{text("afterHero.card3.text")}</p>
+      </div>
+    </div>
+
+    <div class="call-to-action">
+      <p>{text("afterHero.cta.text")}</p>
+      <button class="btn">{text("afterHero.cta.button")}</button>
+    </div>
+  </div>
+</section>
+<style >
+  .after-hero-section {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #140152; 
+    color: rgba(255, 255, 255, 0.9);
+    padding: 4rem 1rem; 
+    text-align: center;
+    overflow: hidden; 
+  }
+
+  .after-hero-section .container {
+    padding: 0 1rem;
+  }
+
+  .after-hero-section h2 {
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+    color: #00e676; /* Cor de destaque para o título */
+  }
+  .container p {
+    text-align: left;
+  }
+  .after-hero-section .intro-paragraph {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 3rem auto; 
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 2.5rem; 
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .feature-card {
+    background-color: rgba(0, 0, 0, 0.3); 
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    text-align: left; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+  }
+
+  .icon-wrapper {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    margin-left: 0;
+  }
+
+  .icon-wrapper svg {
+    color: #140152; 
+    width: 40px;
+    height: 40px;
+  }
+
+  .feature-card h3 {
+    font-size: 1.6rem;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    color: #00e676; 
+  }
+
+  .feature-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .call-to-action {
+    background: #e2e8f071;
+    border: 1px solid #e2e8f0;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 1.4rem;
+    color: #140152;
+    font-weight: 700;
+    font-size: 3rem;
+   
+    box-shadow: 0 0 2rem rgba(208, 207, 207, 0.769);
+
+  }
+.call-to-action p{
+  text-align: center;
+}
+  .call-to-action .btn {
+    all: unset;
+    display: inline-block;
+    background-color: #00e676;
+    color: #140152; 
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:2rem;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+   
+  }
+
+  .call-to-action .btn:hover {
+    background-color: #00c660; 
+    transform: translateY(-2px);
+  }
+
+  /* Media Queries para Responsividade */
+  @media (max-width: 1024px) {
+    .after-hero-section {
+      width: 100vw;
+      
+    
+    }
+
+    .after-hero-section h2 {
+      font-size: 2.2rem;
+    }
+
+    .after-hero-section .intro-paragraph {
+      font-size: 1rem;
+    }
+
+    .features-grid {
+      grid-template-columns: 1fr; 
+      gap: 2rem;
+    }
+
+    .feature-card {
+      text-align: center; 
+      padding: 1.5rem;
+    }
+
+    .icon-wrapper {
+      margin: 0 auto 1.5rem auto; 
+    }
+
+    .call-to-action {
+      font-size: 1.2rem;
+    }
+  }
+</style>

@@ -1,0 +1,32 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Hero from '../../components/home/hero.astro';
+const currentLang = Astro.currentLocale || 'en';
+import { useTranslation } from '../../i18n/utils';
+import {languagesList} from "../../i18n/ui";
+const t = useTranslation(currentLang as keyof typeof languagesList);
+import Ourwork from '../../components/home/ourWork.astro';
+import Services from '../../components/home/services.astro';
+import IaModal from '../../components/iaModal/iaModal'
+import Contact from '../../components/home/contact.astro';
+const textModal = {
+    "iaModal.title": t("iaModal.title"),
+    "iaModal.description": t("iaModal.description"),
+    "iaModal.item1": t("iaModal.item1"),
+    "iaModal.item2": t("iaModal.item2"),
+    "iaModal.item3": t("iaModal.item3"),
+    "iaModal.cta": t("iaModal.cta")
+}
+
+---
+<Layout title='Welcome'>
+    <Hero text={t}/>
+    <Ourwork text={t} />
+    <Services  text={t}/>
+    <Contact text={t}/>
+    <IaModal client:only="react"  text={textModal} />
+</Layout>
+
+
+
+

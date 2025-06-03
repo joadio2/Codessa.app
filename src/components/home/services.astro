@@ -1,0 +1,24 @@
+---
+import ServicesAnimate from "./servicesAnimate.jsx"
+const { text: t } = Astro.props;
+
+// Flattening translation keys (manualmente, o automatizado)
+const text = {
+  "services.title": t("services.title"),
+  "services.intro": t("services.intro"),
+  "services.title1": t("services.title1"),
+  "services.description1": t("services.description1"),
+  "services.title2": t("services.title2"),
+  "services.description2": t("services.description2"),
+  "services.title3": t("services.title3"),
+  "services.description3": t("services.description3"),
+  "services.title4": t("services.title4"),
+  "services.description4": t("services.description4"),
+  "services.cta.text": t("services.cta.text"),
+  "services.cta.button": t("services.cta.button")
+}
+---
+
+<section>
+  <ServicesAnimate text={text} client:only="react" />
+</section>
