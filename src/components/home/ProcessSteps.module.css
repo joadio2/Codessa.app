@@ -88,7 +88,7 @@
   background: linear-gradient(90deg, #ff00cc, #00c3ff);
   color: white;
   padding: 1.2rem 2.8rem;
-  border-radius: 999px;
+  border-radius: 0.5rem;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1rem;

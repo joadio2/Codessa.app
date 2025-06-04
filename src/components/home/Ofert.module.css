@@ -81,16 +81,16 @@
 
 .button {
   display: inline-block;
-  background: #ff00cc;
+  background: linear-gradient(90deg, #ff00cc, #00c3ff);
   color: white;
-  padding: 1.1rem 2.5rem;
-  border-radius: 999px;
+  padding: 1.2rem 2.8rem;
+  border-radius: 0.5rem;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.15rem;
-  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-  box-shadow: 0 5px 15px rgba(255, 0, 204, 0.4);
-  margin-bottom: 1rem; /* Space between button and guarantee */
+  font-size: 1.1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 195, 255, 0.3);
+  margin-top: 4rem; /* Space between button and guarantee */
 }
 
 .button:hover {

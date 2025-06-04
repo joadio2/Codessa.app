@@ -88,17 +88,25 @@ import message from "../../assets/lottie/message.json";
     border: 1px solid #ccc;
   }
   .submit-button {
-    padding: 0.75rem;
-    background-color: var(--plasma-purple);
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: larger;
-    border-radius: 6px;
-    transition: background 0.3s ease;
+    border: 0;
+  background: linear-gradient(90deg, #ff00cc, #00c3ff);
+  color: white;
+  padding: 1.2rem 2.8rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 195, 255, 0.3);
+  margin-top: 4rem;
+  cursor: pointer;
   }
   .submit-button:hover {
-    background-color: var(--plasma-hover);
+    
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 195, 255, 0.5);
+  background: linear-gradient(90deg, #e600b8, #00a0e6);
+
   }
  
   
