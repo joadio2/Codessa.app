@@ -16,6 +16,16 @@ export const labels = {
     "hero.descriptionSpan": "software empresarial",
     "hero.descriptionAfterSpan": ", apps web y automatización.",
     "hero.cta": "Quiero mi SOLUCIÓN TECNOLÓGICA",
+    "ofert.title": "¡Crea tu presencia online!",
+    "ofert.priceTitle": "Tu Web por solo",
+    "ofert.price": "$50",
+    "ofert.benefits1": "Diseño Moderno y Rápido",
+    "ofert.benefits2": "Optimización Esencial Incluida",
+    "ofert.benefits3": "Ideal para Negocios y Proyectos",
+    "ofert.limit": "Oferta Limitada",
+    "ofert.cta": "¡Quiero Mi Web Ahora!",
+    "ofert.guarantee": "Garantía de Satisfacción",
+    "ofert.caption": "Moldea tu historia, lanza tu negocio",
     "afterHero.title": "Nuestro Compromiso con la Innovación",
     "afterHero.subtitle":
       "En Codessa, creemos que la tecnología es el motor del progreso. Te invitamos a descubrir lo que nos impulsa: la pasión por construir soluciones tecnológicas que no solo responden a las necesidades actuales, sino que también anticipan los desafíos del mañana.",
@@ -48,6 +58,22 @@ export const labels = {
     "services.cta.text":
       "¿Listo para llevar tu empresa al siguiente nivel con tecnología?",
     "services.cta.button": "Contáctanos y pide una cotización",
+    "process.title": "Nuestro Proceso de Creación Digital",
+    "process.subtitle":
+      "En Codessa, convertimos tus ideas en soluciones digitales potentes.",
+    "process.stepTitile1": "¡Conéctate y Define tu Visión!",
+    "process.stepSubTitile1":
+      "El primer paso para tu éxito digital comienza con una conversación. Contáctanos para agendar tu consulta inicial gratuita. Queremos entender a fondo tu visión del proyecto para poder ofrecerte las mejores soluciones de marketing digital y desarrollo.",
+    "process.stepTitile2": "Análisis Estratégico y Propuesta Personalizada",
+    "process.stepSubTitile2":
+      "Nuestro equipo de expertos en desarrollo de software y marketing digital realiza un análisis estratégico exhaustivo. El resultado es una propuesta personalizada que detalla el alcance, las fases y un presupuesto transparente para tu presencia online o desarrollo de software a medida.",
+    "process.stepTitile3": "Desarrollo Ágil y Colaborativo",
+    "process.stepSubTitile3":
+      "Con tu aprobación, ¡comienza la magia! Nuestro equipo de desarrolladores de software y expertos en marketing digital implementa el diseño UX/UI optimizado, la programación web o el desarrollo de software a medida, integrando soluciones de automatización y optimizando con las mejores prácticas SEO.",
+    "process.stepTitile4": "Lanzamiento, Optimización Continua y Soporte",
+    "process.stepSubTitile4":
+      "Una vez que tu proyecto digital ha sido probado y refinado, procedemos a su lanzamiento estratégico. Ofrecemos mantenimiento web continuo, soporte técnico y servicios de optimización SEO post-lanzamiento para asegurar que tu solución genere resultados tangibles.",
+    "process.cta": "¡Comienza tu Transformación Digital Hoy!",
     "contact.title": "Contáctanos",
     "contact.subtitle": "¿Tienes una idea? Hablemos.",
     "contact.name": "Nombre",
@@ -73,6 +99,16 @@ export const labels = {
     "hero.descriptionSpan": "enterprise software",
     "hero.descriptionAfterSpan": ", web apps, and automation.",
     "hero.cta": "Get my TECH SOLUTION",
+    "ofert.title": "Create your online presence!",
+    "ofert.priceTitle": "Your Website for only",
+    "ofert.price": "$50",
+    "ofert.benefits1": "Modern & Fast Design",
+    "ofert.benefits2": "Essential Optimization Included",
+    "ofert.benefits3": "Ideal for Businesses & Projects",
+    "ofert.limit": "Limited Offer",
+    "ofert.cta": "I Want My Website Now!",
+    "ofert.guarantee": "Satisfaction Guarantee",
+    "ofert.caption": "Shape your story, launch your business.",
     "afterHero.title": "Our Commitment to Innovation",
     "afterHero.subtitle":
       "At Codessa, we believe that technology drives progress. We invite you to explore what motivates us: a passion for building tech solutions that not only meet today's needs but also anticipate tomorrow's challenges.",
@@ -105,6 +141,22 @@ export const labels = {
     "services.cta.text":
       "Ready to take your company to the next level with technology?",
     "services.cta.button": "Contact us and request a quote",
+    "process.title": "Our Digital Creation Process",
+    "process.subtitle":
+      "At Codessa, we turn your ideas into powerful digital solutions. Our process is designed to be transparent, efficient, and goal-oriented, ensuring your digital investment generates maximum return.",
+    "process.stepTitile1": "Connect & Define Your Vision!",
+    "process.stepSubTitile1":
+      "The first step to your digital success begins with a conversation. Contact us to schedule your free initial consultation. We want to deeply understand your project vision to offer you the best digital marketing and development solutions.",
+    "process.stepTitile2": "Strategic Analysis & Personalized Proposal",
+    "process.stepSubTitile2":
+      "Our team of software development and digital marketing experts conducts a thorough strategic analysis. The result is a personalized proposal detailing the scope, phases, and a transparent budget for your online presence or custom software development.",
+    "process.stepTitile3": "Agile & Collaborative Development",
+    "process.stepSubTitile3":
+      "With your approval, the magic begins! Our team of software developers and digital marketing experts implements optimized UX/UI design, web programming or custom software development, integrating automation solutions and optimizing with best SEO practices.",
+    "process.stepTitile4": "Launch, Continuous Optimization & Support",
+    "process.stepSubTitile4":
+      "Once your digital project has been tested and refined, we proceed with its strategic launch. We offer continuous web maintenance, technical support, and post-launch SEO optimization services to ensure your solution generates tangible results.",
+    "process.cta": "Start Your Digital Transformation Today!",
     "contact.title": "Contact Us",
     "contact.subtitle": "Have an idea? Let’s talk.",
     "contact.name": "Name",
@@ -130,6 +182,16 @@ export const labels = {
     "hero.descriptionSpan": "software empresarial",
     "hero.descriptionAfterSpan": ", apps web e automação.",
     "hero.cta": "Quero minha SOLUÇÃO TECNOLÓGICA",
+    "ofert.title": "Crie a sua presença online!",
+    "ofert.priceTitle": "O Seu Site por apenas",
+    "ofert.price": "50€",
+    "ofert.benefits1": "Design Moderno e Rápido",
+    "ofert.benefits2": "Otimização Essencial Incluída",
+    "ofert.benefits3": "Ideal para Negócios e Projetos",
+    "ofert.limit": "Oferta Limitada",
+    "ofert.cta": "Quero o Meu Site Agora!",
+    "ofert.guarantee": "Garantia de Satisfação",
+    "ofert.caption": "Molde a sua história, lance o seu negócio.",
     "afterHero.title": "O Nosso Compromisso com a Inovação",
     "afterHero.subtitle":
       "Na Codessa, acreditamos que a tecnologia é o motor do progresso. Convidamo-lo a aprofundar-se no que nos move: a paixão por construir soluções tecnológicas que não só respondem às necessidades atuais, mas também antecipam os desafios de amanhã.",
@@ -162,6 +224,22 @@ export const labels = {
     "services.cta.text":
       "Pronto para elevar a sua empresa ao próximo nível com a tecnologia?",
     "services.cta.button": "Fale Connosco e Peça um Orçamento",
+    "process.title": "O Nosso Processo de Criação Digital",
+    "process.subtitle":
+      "Na Codessa, transformamos as suas ideias em soluções digitais poderosas. O nosso processo é projetado para ser transparente, eficiente e focado nos seus objetivos, garantindo que o seu investimento digital gere o máximo retorno.",
+    "process.stepTitile1": "Conecte-se e Defina a Sua Visão!",
+    "process.stepSubTitile1":
+      "O primeiro passo para o seu sucesso digital começa com uma conversa. Contacte-nos para agendar a sua consulta inicial gratuita. Queremos compreender a fundo a sua visão do projeto para poder oferecer-lhe as melhores soluções de marketing digital e desenvolvimento.",
+    "process.stepTitile2": "Análise Estratégica e Proposta Personalizada",
+    "process.stepSubTitile2":
+      "A nossa equipa de especialistas em desenvolvimento de software e marketing digital realiza uma análise estratégica exaustiva. O resultado é uma proposta personalizada que detalha o âmbito, as fases e um orçamento transparente para a sua presença online ou desenvolvimento de software à medida.",
+    "process.stepTitile3": "Desenvolvimento Ágil e Colaborativo",
+    "process.stepSubTitile3":
+      "Com a sua aprovação, a magia começa! A nossa equipa de programadores de software e especialistas em marketing digital implementa o design UX/UI otimizado, a programação web ou o desenvolvimento de software à medida, integrando soluções de automação e otimizando com as melhores práticas SEO.",
+    "process.stepTitile4": "Lançamento, Otimização Contínua e Suporte",
+    "process.stepSubTitile4":
+      "Uma vez testado e refinado o seu projeto digital, procedemos ao seu lançamento estratégico. Oferecemos manutenção contínua de sites, suporte técnico e serviços de otimização SEO pós-lançamento para garantir que a sua solução gere resultados tangíveis.",
+    "process.cta": "Comece a Sua Transformação Digital Hoje!",
     "contact.title": "Contacta-nos",
     "contact.subtitle": "Tens uma ideia? Vamos conversar.",
     "contact.name": "Nome",

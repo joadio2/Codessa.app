@@ -1,0 +1,44 @@
+---
+import styles from "./ProcessSteps.module.css";
+const { text } = Astro.props;
+---
+
+<section class={styles.processSection}>
+  <h2 class={styles.sectionTitle}>{text('process.title')}</h2>
+  <p class={styles.sectionDescription}>
+    {text('process.subtitle')}
+  </p>
+  <div class={styles.stepsGrid}>
+    <div class={styles.stepCard}>
+      <div class={styles.stepNumber}>01</div>
+      <h3 class={styles.stepTitle}>{text('process.stepTitile1')}</h3>
+      <p class={styles.stepDescription}>
+        {text('process.stepSubTitile1')}
+      </p>
+    </div>
+    <div class={styles.stepCard}>
+      <div class={styles.stepNumber}>02</div>
+      <h3 class={styles.stepTitle}>{text('process.stepTitile2')}</h3>
+      <p class={styles.stepDescription}>
+        {text('process.stepSubTitile2')}
+      </p>
+    </div>
+    <div class={styles.stepCard}>
+      <div class={styles.stepNumber}>03</div>
+      <h3 class={styles.stepTitle}>{text('process.stepTitile3')}</h3>
+      <p class={styles.stepDescription}>
+        {text('process.stepSubTitile3')}
+      </p>
+    </div>
+    <div class={styles.stepCard}>
+      <div class={styles.stepNumber}>04</div>
+      <h3 class={styles.stepTitle}>{text('process.stepTitile4')}</h3>
+      <p class={styles.stepDescription}>
+        {text('process.stepSubTitile4')}
+      </p>
+    </div>
+
+  </div>
+
+  <a href="/contacto" class={styles.ctaButton}>{text('process.cta')}</a>
+</section>

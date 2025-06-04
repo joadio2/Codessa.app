@@ -14,8 +14,8 @@ export default defineConfig({
       prefixDefaultLocale: true,
     },
   },
-  site: "https://joadio2.github.io/",
-  base: "/Codessa.app",
+  //site: "https://joadio2.github.io/",
+  //base: "/Codessa.app",
 
   integrations: [react(), icon()],
 });

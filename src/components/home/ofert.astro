@@ -1,0 +1,43 @@
+---
+import styles from './Ofert.module.css';
+import Lottie from 'lottie-react';
+import rays from '../../assets/lottie/rays.json';
+import web from '../../assets/lottie/web.json';
+const { text } = Astro.props;
+---
+
+<section class={styles.wrapper}>
+  
+    
+    <div class={styles.card}>
+      <div class={styles.contentGrid}> 
+        <div class={styles.offerDetails}>
+          <h2 class={styles.smallTitle}>{text('ofert.title')}</h2>
+          <h1 class={styles.mainPrice}>
+           {text('ofert.priceTitle')} <span>{text('ofert.price')}</span>
+          </h1>
+          <ul class={styles.benefitsList}>
+            <li>🚀 {text('ofert.benefits1')}</li>
+            <li>⚙️ {text('ofert.benefits2')}</li>
+            <li>💼 {text('ofert.benefits3')}</li>
+          </ul>
+          <p class={styles.limitedOffer}>{text('ofert.limit')}</p>
+          <a href="/contacto" class={styles.button}>{text('ofert.cta')}</a>
+          <p class={styles.guarantee}>✅ {text('ofert.guarantee')}</p>
+        </div>
+        <div class={styles.visualMockup}>
+         
+          <div class={styles.mockupPlaceholder}>
+             <Lottie 
+              animationData={web} 
+              loop={true} 
+              autoplay={true}
+             client:only="react"
+             />
+          </div>
+          <p class={styles.mockupCaption}>{text('ofert.caption')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

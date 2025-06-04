@@ -9,6 +9,8 @@ import Ourwork from '../../components/home/ourWork.astro';
 import Services from '../../components/home/services.astro';
 import IaModal from '../../components/iaModal/iaModal'
 import Contact from '../../components/home/contact.astro';
+import Ofert from '../../components/home/ofert.astro';
+import ProcessSteps from '../../components/home/processSteps.astro';
 const textModal = {
     "iaModal.title": t("iaModal.title"),
     "iaModal.description": t("iaModal.description"),
@@ -21,8 +23,10 @@ const textModal = {
 ---
 <Layout title='Welcome'>
     <Hero text={t}/>
+    <Ofert text={t} />
     <Ourwork text={t} />
     <Services  text={t}/>
+    <ProcessSteps text={t} />
     <Contact text={t}/>
     <IaModal client:only="react"  text={textModal} />
 </Layout>

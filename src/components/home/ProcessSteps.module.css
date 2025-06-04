@@ -1,0 +1,154 @@
+/* src/styles/components/ProcessSteps.module.css */
+
+.processSection {
+  padding: 6rem 2rem;
+  background: radial-gradient(circle at bottom, #0e0e1a, #0b0b14);
+  color: #e5e5f7;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.sectionTitle {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #00c3ff, #ff00cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.sectionDescription {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+  line-height: 1.6;
+  color: #c0c0c0;
+}
+
+.stepsGrid {
+  display: grid;
+  /* CAMBIO CLAVE: Definimos 2 columnas fijas para pantallas grandes */
+  grid-template-columns: repeat(2, 1fr); /* Siempre 2 columnas de igual ancho */
+  gap: 3rem;
+  max-width: 900px; /* Reducimos max-width un poco para 2 columnas */
+  margin: 0 auto;
+}
+
+.stepCard {
+  background: linear-gradient(145deg, #1c1c2f, #2d2d44);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stepCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+.stepNumber {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #ff00cc;
+  margin-bottom: 1rem;
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.75rem;
+  background: rgba(255, 0, 204, 0.1);
+  border: 1px solid rgba(255, 0, 204, 0.3);
+}
+
+.stepTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #00c3ff;
+}
+
+.stepDescription {
+  font-size: 1rem;
+  color: #e5e5f7;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.stepKeywords {
+  font-size: 0.85rem;
+  color: #999;
+  font-style: italic;
+}
+
+.ctaButton {
+  display: inline-block;
+  background: linear-gradient(90deg, #ff00cc, #00c3ff);
+  color: white;
+  padding: 1.2rem 2.8rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 195, 255, 0.3);
+  margin-top: 4rem;
+}
+
+.ctaButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 195, 255, 0.5);
+  background: linear-gradient(90deg, #e600b8, #00a0e6);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  /* Ajustamos el breakpoint para que 2 columnas se mantengan más tiempo */
+  .sectionTitle {
+    font-size: 2.5rem;
+  }
+
+  .sectionDescription {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .stepsGrid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(250px, 1fr)
+    ); /* Permitimos más flexibilidad en tablet */
+    gap: 2rem;
+  }
+
+  .stepCard {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Nuevo breakpoint para forzar 1 columna en móviles pequeños */
+  .stepsGrid {
+    grid-template-columns: 1fr; /* Una columna en móvil muy pequeño */
+  }
+
+  .stepNumber {
+    font-size: 1.5rem;
+  }
+
+  .stepTitle {
+    font-size: 1.6rem;
+  }
+
+  .stepDescription {
+    font-size: 0.95rem;
+  }
+
+  .ctaButton {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    margin-top: 3rem;
+  }
+}
